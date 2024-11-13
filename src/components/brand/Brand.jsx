@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './brand.css';
 import { data } from '../../edit/data/export';
+import { Fade } from 'react-awesome-reveal';
 
 const { technologies } = data;
 
@@ -31,28 +32,30 @@ const Brand = () => {
   }
 
   return (
-    <div className='gpt3__brand section__padding'>
-      {
-        technologies.map((stack, i) => (
-          <div key={i}>
-            <img
-              className="scale-up-center"
-              onMouseEnter={() => handleStackMouseEnter(i)}
-              onMouseLeave={() => handleStackMouseLeave(i)}
-              src={stack.src}
-              alt={stack.alt}
-            />
-          </div>
-        ))
-      }
-      {
-        <>
-          {isStackInfoVisible && isStackActive && (
-            <p className='scale-up-center'>{stackInfo}</p>
-          )}
-        </>
-      }
-    </div>
+    <Fade direction='up' duration={1200}>
+      <div className='gpt3__brand section__padding'>
+        {
+          technologies.map((stack, i) => (
+            <div key={i}>
+              <img
+                className="scale-up-center"
+                onMouseEnter={() => handleStackMouseEnter(i)}
+                onMouseLeave={() => handleStackMouseLeave(i)}
+                src={stack.src}
+                alt={stack.alt}
+              />
+            </div>
+          ))
+        }
+        {
+          <>
+            {isStackInfoVisible && isStackActive && (
+              <p className='scale-up-center'>{stackInfo}</p>
+            )}
+          </>
+        }
+      </div>
+    </Fade>
   )
 }
 export default Brand
