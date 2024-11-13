@@ -4,7 +4,7 @@
 }
 
 .titleGroup h1 {
-    display:inline;
+    display: inline;
 }
 
 .gpt3__header-content {
@@ -105,6 +105,44 @@
     width: 100%;
     height: 100%;
 }
+
+.arrow-up-icon {
+    position: fixed;
+    bottom: 1rem;
+    z-index: 4;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow-up-icon-elem {
+    background-color: rgb(3, 27, 52, 0.3);
+    font-size: 2.5rem;
+    border-radius: 50%;
+    backdrop-filter: blur(8px);
+}
+
+@keyframes moveUpAndDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+        /* Adjust this value to control the distance */
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Apply the animation to the arrow icon */
+.arrow-up-icon {
+    animation: moveUpAndDown 2s ease-in-out infinite;
+}
+
 
 @media (max-width: 1050px) {
     .gpt3__header {

@@ -55,44 +55,50 @@
     line-height: 24px;
     color: var(--color-text);
 }
-  
-  /* Circle styling */
-  .blinkingCircle {
+
+/* Circle styling */
+.blinkEffect {
+    animation: blink 2s infinite ease-in-out;
+}
+
+.circle {
     display: inline-block;
     margin-left: 0.5rem;
     width: 0.5rem;
     height: 0.5rem;
     background: var(--color-subtext);
     border-radius: 50%;
-    animation: blink 2s infinite ease-in-out;
-  }
-  
-  .whitish .blinkingCircle {
+}
+
+.whitish .blinkEffect {
     background-color: var(--color-text);
-  }
-  
-  /* Blinking animation */
-  @keyframes blink {
-    0%, 100% {
-      opacity: 1;
+}
+
+/* Blinking animation */
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
     }
+
     50% {
-      opacity: 0.3;
+        opacity: 0.3;
     }
-  }
-  
+}
+
 
 @media (max-width: 550px) {
     .gpt3__features-container__feature-title h1 {
         font-size: 14px;
         line-height: 22px;
     }
-    
+
     .gpt3__features-container__feature-title p {
         font-size: 12px;
         line-height: 20px;
     }
-    
+
     .gpt3__features-container__feature {
         margin: 1rem 0;
     }

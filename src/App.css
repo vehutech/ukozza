@@ -42,6 +42,12 @@ button {
    cursor: pointer; 
 }
 
+button.transparent {
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
 p {
     color: var(--color-text);
 }

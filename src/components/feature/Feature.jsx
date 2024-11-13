@@ -29,7 +29,9 @@ const Feature = ({ title, text, some }) => {
                 onClick={() => revealAboutNext()}
                 className={`inlineBtn ${isAboutNextJsVisible ? 'whitish' : ''}`}>
                 NextJs
-                <div className="blinkingCircle"></div>
+                <div className="blinkEffect circle">
+                  <div className="circle"></div>
+                </div>
               </button>
             )}
           </p>
