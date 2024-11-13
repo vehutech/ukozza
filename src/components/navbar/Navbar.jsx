@@ -26,7 +26,7 @@ const Navbar = () => {
 
   const [toggleMenu, setToggleMenu] = useState(false);
 
-  const [showNavbar, setShowNavbar] = useState(true);
+  const [showNavbar, setShowNavbar] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
 
   const handleScroll = () => {
