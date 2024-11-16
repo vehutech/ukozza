@@ -1,13 +1,11 @@
 import React from 'react'
 import './possibility.css'
 import { data } from '../../edit/data/export';
-import { Fade } from 'react-awesome-reveal';
 
 const { navLinks, section3 } = data;
 
 const Possibility = () => {
   return (
-    <Fade direction='up' duration={800}>
       <div className='gpt3__possibility section__padding' id={navLinks[3].replaceAll(' ', '').toLocaleLowerCase()}>
         <div className='gpt3__possibility-image'>
           <img src={section3.image.src} alt={section3.image.alt} />
@@ -23,7 +21,6 @@ const Possibility = () => {
           <h4>{section3.text2}</h4>
         </div>
       </div>
-    </Fade>
   )
 }
 
