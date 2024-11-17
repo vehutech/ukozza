@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react'
-import { Footer, Blog, Possibility, Features, WhatGpt3, Header } from "./containers";
+import React, { useEffect } from 'react'
+import { Footer, Blog, Possibility, Features, WhatGpt3, Header, Talents } from "./containers";
 import { Brand, Cta, Navbar } from "./components";
 import './App.css';
 import { data } from './edit/data/export';
@@ -32,6 +32,7 @@ const App = () => {
       <Possibility />
       <Cta />
       <Blog />
+      <Talents />
       <Footer />
     </div>
   )

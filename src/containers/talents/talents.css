@@ -1,0 +1,124 @@
+/* General container styles */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 1rem;
+  justify-content: center;
+  background-color: #031B34;
+  /* Dark background */
+  color: #c9d1d9;
+  /* Light text for readability */
+}
+
+.socialIcons {
+  width: 70px;
+}
+
+/* Neumorphic employee card styles */
+.employee-card {
+  display: flex;
+  align-items: center;
+  border-radius: 16px;
+  padding: 1.5rem;
+  flex-direction: column;
+  background: #031B34;
+  /* Matches container background */
+  box-shadow: 8px 8px 16px #021223, -8px -8px 16px #042544;
+  /* Neumorphic shadow for dark mode */
+  flex: 1 1 calc(33.33% - 1.5rem);
+  max-width: calc(33.33% - 1.5rem);
+  transition: transform 0.2s, box-shadow 0.2s;
+  /* Smooth interaction effects */
+  box-sizing: border-box;
+}
+
+/* Hover effect for Neumorphic card */
+.employee-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 10px 10px 20px #021223, -10px -10px 20px #052a4e;
+  /* Deeper shadow */
+  cursor: pointer;
+}
+
+/* Profile image styles */
+.profile-image {
+  flex-shrink: 0;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 1rem;
+  box-shadow: inset 4px 4px 8px #021223, inset -4px -4px 8px #052a4e;
+  /* Neumorphic inset effect for dark mode */
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  /* Ensures circular images */
+}
+
+/* Employee info styles */
+.employee-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.employee-info .name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #c9d1d9;
+  /* White text for contrast */
+  margin: 0;
+}
+
+.employee-info .role {
+  font-size: 1rem;
+  color: var(--color-subtext);
+  /* Light text for readability */
+  margin: 0.2rem 0;
+}
+
+.employee-info .about {
+  font-size: 0.8rem;
+  margin: 0.2rem 0;
+  font-style: italic;
+}
+
+.employee-info .social-links {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.employee-info .social-links a {
+  text-decoration: none;
+  color: #58a6ff;
+  /* Light blue for links */
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.employee-info .social-links a:hover {
+  color: #1f6feb;
+  /* Darker blue on hover */
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .employee-card {
+    flex: 1 1 calc(50% - 1.5rem);
+    max-width: calc(50% - 1.5rem);
+  }
+}
+
+@media (max-width: 767px) {
+  .employee-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}

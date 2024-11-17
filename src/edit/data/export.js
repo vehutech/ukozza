@@ -16,6 +16,9 @@ import people from './images/Group 81.png'
 import possibilityImg from './images/Feature Image.png';
 import instagram from './images/instagram-1.svg';
 import twitter from './images/TwitterXcopy.png';
+import VehuImg from './images/vehus_w_bg.jpg';
+import GideonImg from './images/gidBello.jpg';
+import { Github, Globe, Globe2, Twitter } from 'react-bootstrap-icons'
 
 export const brandName = "Ukozza";
 
@@ -160,6 +163,51 @@ export const data = {
             alt: "Possibility Image"
         }
     },
+    section4: [
+        {
+            title: `Meet our Developers`
+        },
+        {
+            name: "D Vehu Alonge",
+            image: VehuImg,
+            job: "Software Engineer",
+            about: "With a computer science degree and an experience using data structures plus an arsenal of modern technologies like React, Typescipt, Node, Python, and Java. Vehu is ready to jump on your next big idea.",
+            network: [
+                // Github 
+                {
+                    link: "https://www.github.com/vehutech", icon: <Github />
+                },
+                // X | Twitter 
+                {
+                    link: "https://www.x.com/vehutech", icon: <Twitter />
+                },
+                // Website
+                {
+                    link: "https://vehutech.vercel.app", icon: <Globe2 />
+                }
+            ]
+        },
+        {
+            name: "Gideon Bello",
+            image: GideonImg,
+            job: "Front-End Engineer",
+            about: "Gideon is an energetic Front-End Engineer with expertise in modern technologies. His vast experience in design sets him apart to create stunning user interfaces",
+            network: [
+                // Github 
+                {
+                    link: "https://www.github.com/gidbell", icon: <Github />
+                },
+                // X | Twitter 
+                {
+                    link: "https://www.x.com/gidbell", icon: <Twitter />
+                },
+                // Website
+                {
+                    link: "https://gidbell.vercel.app", icon: <Globe2 />
+                }
+            ]
+        },
+    ],
     cta: {
         title: "Join the world to use industry standard web technologies.",
         text: "For Developers, business owners and just anyone that needs a website",
@@ -215,7 +263,7 @@ export const data = {
     },
     footer: {
         title: "Do you want to step into the future before others?",
-        btnText: "Request Early Access",
+        btnText: "Enroll as a developer",
         logo: {
             src: logo,
             alt: "Our logo"
