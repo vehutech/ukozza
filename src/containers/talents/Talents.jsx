@@ -22,7 +22,7 @@ const Talents = () => (
                     {i > 0 && (
                         <div className="employee-card">
                             <div className="profile-image">
-                                <img src={developer.image} alt="Developer Name" />
+                                <img src={developer.image} alt={`Image of '${developer.name}'`} />
                             </div>
                             <div className="employee-info">
                                 <p className="name">{developer.name}</p>
