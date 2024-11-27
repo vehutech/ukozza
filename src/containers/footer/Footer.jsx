@@ -1,8 +1,7 @@
 import React from 'react'
 import './footer.css'
-import { data } from '../../edit/data/export'
+import { footer } from '../../edit/data/export'
 
-const { footer } = data;
 const { items } = footer;
 
 const Footer = () => {
@@ -31,7 +30,7 @@ const Footer = () => {
               {item.utility.map((network, childKey) => (
                 <>
                   {parentKey == 0 ? (
-                    <a target='blank' href={`${childKey === 0 ? 'https://www.instagram.com/ukozza' : 'https://www.twitter.com/ukozza'}`} key={childKey}>
+                    <a target='blank' href={network.link} key={childKey}>
                       <img className='smallIcon' src={network.src} alt={network.alt} />
                     </a>
                   ) : (
@@ -40,7 +39,7 @@ const Footer = () => {
                 </>
               ))}
             </section>
-            
+
           </div>
         ))}
 

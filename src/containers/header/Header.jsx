@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './header.css';
-import { data } from '../../edit/data/export';
+import { hero, navLinks } from '../../edit/data/export';
 import { ArrowBarUp, ArrowUpCircle, ArrowUpCircleFill } from 'react-bootstrap-icons';
-
-const { hero, navLinks } = data;
 
 const Header = () => {
 

@@ -1,11 +1,9 @@
 import React from 'react'
 import './features.css'
 import { Feature } from '../../components';
-import { data } from '../../edit/data/export';
+import { navLinks, section2 } from '../../edit/data/export';
 
 const Features = () => {
-
-  const { navLinks, section2 } = data;
 
   return (
       <div className='gpt3__features section__padding' id={navLinks[2].replaceAll(' ', '').toLowerCase()}>

@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './navbar.css'
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri'
-import { data, brandName } from '../../edit/data/export';
-
-const { brand, navLinks } = data;
+import { brand, navLinks } from '../../edit/data/export';
 
 const Menu = () => {
 
@@ -11,7 +9,7 @@ const Menu = () => {
     <>
       {
         navLinks.map((item, i) => (
-          <p key={i}>
+          <p key={i} className='navLinks'>
             <a href={`#${item.replaceAll(' ', '').toLowerCase()}`}>
               {item}
             </a>
@@ -62,8 +60,9 @@ const Navbar = () => {
 
       <div className='gpt3__navbar-links'>
         <div className='gpt3__navbar-links_logo'>
-          <img src={brand.logo.src} alt={brand.logo.alt} />
-          <img src={brand.logoMain.src} alt={brand.logoMain.alt} />
+          <img src={brand.logo.src} alt={brand.logo.alt} className='logoMark' />
+          <img src={brand.logoMain.src} alt={brand.logoMain.alt} className='logoMain'/>
+          {/* <p className='gradient__text bold'>Ukozza</p> */}
         </div>
         <div className='gpt3__navbar-links_container'>
           <Menu />

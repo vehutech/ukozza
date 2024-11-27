@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import './brand.css';
-import { data } from '../../edit/data/export';
-
-const { technologies } = data;
+import { technologies } from '../../edit/data/export';
 
 const Brand = () => {
 

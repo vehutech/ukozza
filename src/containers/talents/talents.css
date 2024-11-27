@@ -15,6 +15,15 @@
   width: 70px;
 }
 
+.meetDevBtn {
+  margin: auto;
+  align-items: center;
+  display: flex;
+  border: 0.15rem solid #1f6feb !important;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
 /* Neumorphic employee card styles */
 .employee-card {
   display: flex;

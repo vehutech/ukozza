@@ -1,8 +1,6 @@
 import React from 'react'
 import './possibility.css'
-import { data } from '../../edit/data/export';
-
-const { navLinks, section3 } = data;
+import { navLinks, section3 } from '../../edit/data/export';
 
 const Possibility = () => {
   return (

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './feature.css'
-import { data } from '../../edit/data/export'
+import { brand } from '../../edit/data/export'
 
 const Feature = ({ title, text, some }) => {
 
@@ -17,7 +17,7 @@ const Feature = ({ title, text, some }) => {
         <div className='gpt3__features-container__feature-title'>
           <div />
           {some && (
-            <img className='smallIcon' src={data.brand.logo.src} alt="" />
+            <img className='smallIcon' src={brand.logo.src} alt="" />
           )}
           <h1>{title}</h1>
         </div>

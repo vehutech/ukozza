@@ -1,3 +1,26 @@
+.logoMark {
+    width: 3rem;
+}
+
+.logoMain {
+    width: 5rem;
+    display: none;
+}
+
+.logoMark {
+    animation: infiniteRotate 3s linear infinite;
+}
+
+@keyframes infiniteRotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 .gpt3__navbar {
     display: flex;
     justify-content: space-between;
@@ -9,11 +32,28 @@
 /* Navbar shows up on scroll down */
 .show {
     transform: translateY(0);
-    position:fixed;
+    position: fixed;
     width: 100%;
     z-index: 10;
     background-color: rgb(3, 27, 52, 0.7);
-    backdrop-filter:blur(8px);
+    backdrop-filter: blur(8px);
+    padding: 0.5rem 6rem !important;
+}
+
+.navLinks {
+    display: flex;
+    align-items: center;
+}
+
+button,
+.navLinks a,
+.gpt3__navbar-sign p,
+.gpt3__navbar-sign button {
+    text-wrap: nowrap;
+}
+
+.bold {
+    font-weight: 800;
 }
 
 .gpt3__navbar-links {
@@ -27,14 +67,6 @@
     margin-right: 2rem;
     display: flex;
     align-items: center;
-}
-
-.gpt3__navbar-links_logo img:first-child {
-    width: 50px;
-}
-
-.gpt3__navbar-links_logo img:last-child {
-    width: 120px;
 }
 
 .gpt3__navbar-links_container {
@@ -140,7 +172,11 @@
     }
 
     .gpt3__navbar {
-        padding: 2rem;
+        padding: 1rem 2rem;
+    }
+
+    .show {
+        padding: 0.5rem 2rem;
     }
 
     .gpt3__navbar-sign {

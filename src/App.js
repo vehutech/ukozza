@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { Footer, Blog, Possibility, Features, WhatGpt3, Header, Talents } from "./containers";
 import { Brand, Cta, Navbar } from "./components";
 import './App.css';
-import { data } from './edit/data/export';
+import { colors, fonts } from './edit/data/export';
 
 const App = () => {
 
@@ -10,12 +10,12 @@ const App = () => {
     const root = document.documentElement;
 
     // Set colors
-    Object.entries(data.colors).forEach(([key, value]) => {
+    Object.entries(colors.darkMode).forEach(([key, value]) => {
       root.style.setProperty(`--color-${key}`, value);
     });
 
     // Set fonts
-    Object.entries(data.font).forEach(([key, value]) => {
+    Object.entries(fonts).forEach(([key, value]) => {
       root.style.setProperty(`--font-${key}`, value);
     });
   }, []);

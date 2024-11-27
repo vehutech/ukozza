@@ -1,9 +1,7 @@
 import React from 'react'
 import './blog.css'
 import { Article } from '../../components';
-import { data } from '../../edit/data/export';
-
-const { navLinks, blog } = data;
+import { navLinks, blog  } from '../../edit/data/export';
 
 const { lead, readArticle, list } = blog;
 

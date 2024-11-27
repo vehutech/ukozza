@@ -1,8 +1,6 @@
 import React from 'react'
 import './cta.css'
-import { data } from '../../edit/data/export';
-
-const { cta } = data;
+import { cta } from '../../edit/data/export';
 
 const Brand = () => {
   return (

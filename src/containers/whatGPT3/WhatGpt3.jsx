@@ -1,9 +1,7 @@
 import React from 'react'
 import './whatgpt3.css'
 import { Feature } from '../../components'
-import { data } from '../../edit/data/export'
-
-const { navLinks, section1 } = data;
+import { navLinks, section1 } from '../../edit/data/export'
 
 const WhatGpt3 = () => {
   return (
